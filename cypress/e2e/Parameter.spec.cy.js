@@ -1,4 +1,6 @@
-describe('Login', () => {
+//Parameter
+
+describe('Parameter Create Positif', () => {
     it('passes', () => {
       //Go To Login Page
       cy.visit('http://10.232.1.21:7759/login')
@@ -39,6 +41,42 @@ describe('Login', () => {
 
       cy
       .get('.v-col-sm-9 > .v-btn')
+      .click()
+
+      cy
+      .get('#input-55')
+      .type('Kondisi insulator Tumpu/Dudukan')
+
+      cy
+      .get('#input-44')
+      .click()
+
+      cy
+      .get(':nth-child(1) > .v-list-item__content > .v-list-item-title')
+      .click()
+
+      cy
+      .get('#input-50')
+      .click()
+
+      cy
+      .get(':nth-child(1) > .v-list-item__content > .v-list-item-title')
+      .click()
+
+      cy
+      .get('#input-53')
+      .click()
+
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(1)')
+      .click()
+
+      cy
+      .get('#input-56')
+      .click()
+
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(1)')
       .click()
     })
   })
