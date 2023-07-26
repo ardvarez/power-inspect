@@ -44,8 +44,16 @@ describe('Parameter Create Positif', () => {
       .click()
 
       cy
-      .get('#input-55')
+      .get('#input-42')
       .type('Kondisi insulator Tumpu/Dudukan')
+
+      cy
+      .get('#input-44')
+      .click()
+
+      cy
+      .get(':nth-child(1) > .v-list-item__content > .v-list-item-title')
+      .click()
 
       cy
       .get('#input-44')
@@ -60,15 +68,15 @@ describe('Parameter Create Positif', () => {
       .click()
 
       cy
-      .get(':nth-child(1) > .v-list-item__content > .v-list-item-title')
+      .get('.v-overlay--active > .v-overlay__content > .v-list > :nth-child(1)')
       .click()
-
+      
       cy
       .get('#input-53')
       .click()
 
       cy
-      .get('.v-overlay__content > .v-list > :nth-child(1)')
+      .get('.v-overlay--active > .v-overlay__content > .v-list > :nth-child(1)')
       .click()
 
       cy
@@ -76,7 +84,190 @@ describe('Parameter Create Positif', () => {
       .click()
 
       cy
+      .get('.v-overlay--active > .v-overlay__content > .v-list > :nth-child(2)')
+      .click()
+
+      cy
+      .get('#input-60')
+      .type('insulator tumpu tembus, Counter gagal kerja, LCM tidak valid')
+      
+      cy
+      .get('#input-69')
+      .type('Kondisi insulator Tumpu/Dudukan')
+
+      cy
+      .get('#input-69')
+      .should('have.value','Kondisi insulator Tumpu/Dudukan')
+
+      cy
+      .get('#input-71')
+      .click()
+
+      cy
+      .get('.v-overlay--active > .v-overlay__content > .v-list > :nth-child(7)')
+      .click()
+
+      cy
+      .get('#input-77')
+      .click()
+
+      cy
+      .get('.v-overlay--active > .v-overlay__content > .v-list > :nth-child(2)')
+      .click()
+
+      cy
+      .get('#input-80')
+      .click()
+
+      cy
+      .get('.v-overlay--active > .v-overlay__content > .v-list > :nth-child(1)')
+      .click()
+
+      cy
+      .get('#input-83')
+      .type('Kondisi')
+
+      cy
+      .get('[tabindex="-1"] > .v-btn__content')
+      .click()
+      .next()
+
+      cy
+      .get('#input-154')
+      .click()
+
+      cy
+      .get('#input-155')
+      .click()
+
+      cy
       .get('.v-overlay__content > .v-list > :nth-child(1)')
       .click()
+
+      cy
+      .get('.v-col-sm-12 > .v-card > #c-table > .v-table__wrapper > table > tbody > tr > :nth-child(2) > .v-input > .v-input__control > .v-field > .v-field__field > .v-field__input')
+      .click()
+
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(1)')
+      .click()
+
+      cy
+      .get('.v-col-sm-12 > .v-card > #c-table > .v-table__wrapper > table > tbody > tr > :nth-child(3) > .v-input > .v-input__control > .v-field > .v-field__field > .v-field__input')
+      .click()
+
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(3)')
+      .click()
+
+      cy
+      .get('.v-col-sm-12 > .v-card > #c-table > .v-table__wrapper > table > tbody > tr > :nth-child(4) > .v-input > .v-input__control > .v-field > .v-field__field > .v-field__input')
+      .type('Normal')
+
+      cy
+      .get('.v-col-sm-12 > .v-card > #c-table > .v-table__wrapper > table > tfoot > .text-center > .v-btn > .v-btn__content > .mdi-plus')
+      .click()
+
+      cy
+      .get('tbody > :nth-child(2) > :nth-child(2)')
+      .click()
+      
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(2)')
+      .click()
+
+      cy
+      .get('tbody > :nth-child(2) > :nth-child(3)')
+      .click()
+
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(2)')
+      .click()
+
+      cy
+      .get('#input-196')
+      .type('Pembersihan permukaan insulator')
+
+      cy
+      .get('.v-col-sm-12 > .v-card > #c-table > .v-table__wrapper > table > tfoot > .text-center > .v-btn > .v-btn__content > .mdi-plus')
+      .click()
+
+      cy
+      .get('#input-209')
+      .click()
+      
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(3)')
+      .click()
+
+      cy
+      .get('#input-212')
+      .click()
+
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(2)')
+      .click()
+
+      cy
+      .get('#input-215')
+      .type('Pembersihan permukaan insulator')
+
+      cy
+      .get('.v-col-sm-12 > .v-card > #c-table > .v-table__wrapper > table > tfoot > .text-center > .v-btn > .v-btn__content > .mdi-plus')
+      .click()
+      
+      cy
+      .get('#input-228')
+      .click()
+      
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(4)')
+      .click()
+
+      cy
+      .get('#input-231')
+      .click()
+
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(2)')
+      .click()
+
+      cy
+      .get('#input-234')
+      .type('Pembersihan permukaan insulator')
+
+      cy
+      .get('.v-col-sm-12 > .v-card > #c-table > .v-table__wrapper > table > tfoot > .text-center > .v-btn > .v-btn__content > .mdi-plus')
+      .click()
+      
+      cy
+      .get('#input-247')
+      .click()
+      
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(5)')
+      .click()
+
+      cy
+      .get('#input-250')
+      .click()
+
+      cy
+      .get('.v-overlay__content > .v-list > :nth-child(5)')
+      .click()
+
+      cy
+      .get('#input-253')
+      .type('Penggantian insulator tumpu')
+
+      cy
+      .get('.v-col > .v-btn')
+      .click()
+
+      cy
+      .get('.v-card-actions > .v-btn--elevated')
+      .click()
+
+
     })
   })
